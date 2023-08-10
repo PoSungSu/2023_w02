@@ -4,6 +4,8 @@
 img {
     vertical-align: middle;       
 }
+/*先寫PC版型，再依序往下寫RWD*/
+
 /*在 iPad 直立下變更樣式 992px 以下*/
 @media (max-width: 992px) {
     
