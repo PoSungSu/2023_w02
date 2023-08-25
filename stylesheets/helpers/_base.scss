@@ -1,0 +1,26 @@
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Bruno Ace SC", cursive, sans-serif, serif;
+}
+
+img {
+    max-width: 100%;
+    // height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    position: relative;     //讓偽元素的absolute有個對應的位置
+    transition: 0.5s;
+
+    &:before, &:after {
+        content: '';
+        position: absolute; //先讓偽元素飛起來！之後設定定位就隨心所欲
+        transition: 0.3s;
+    }
+}

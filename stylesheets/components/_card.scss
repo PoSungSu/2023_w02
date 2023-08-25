@@ -1,0 +1,11 @@
+.card {
+    width: 306px;
+    padding: map-get($spacers, 4 );
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0px #00000014;
+    gap: 4px;
+    color: #15161D;
+}
+.card-num, .card-title {
+    font-size:map-get($font-sizes, 5 ) ;
+}

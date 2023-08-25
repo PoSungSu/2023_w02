@@ -1,7 +1,20 @@
-@import './variable';
-@import './reset';
+//Base:helpers
+@import './helpers/variable';       //變數
+@import './helpers/fontstyle';      //字體設計
+@import './helpers/reset';         //reset
+@import './helpers/base';          //全站設定
+@import './helpers/utilities';//工具、元件類 class，.mb-1, pr-3 (斷點設計)
+@import './helpers/mixins/mixins-util';
+@import './components/container';
+@import './components/card';
+@import './components/buttons';
 
+
+@import './helpers/utilities/api';
+
+//layout 共同框架，第一層
 @import './layout/header';
 @import './layout/footer';
 
+//頁面設計
 @import './pages/index';

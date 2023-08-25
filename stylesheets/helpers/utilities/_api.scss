@@ -1,0 +1,7 @@
+@each $key, $utility in $utilities {
+    // @if type-of($utility) == "map" and (map-get($utility , responsive )) {
+
+        @include generate-utility($utility);    //呼叫 generate-utility
+
+    // }
+};

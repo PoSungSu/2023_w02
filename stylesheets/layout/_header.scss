@@ -1,0 +1,25 @@
+.nav a {
+    color: map-get($theme-colors, tertiary);
+    &:hover {
+        color: map-get($theme-colors, tertiary);
+        border-bottom: 1px solid white;
+    }
+}
+.banner {
+    @extend %container;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    flex-grow: 1;
+    max-width: 636px;
+    h1 {
+        text-align: right;
+    }
+    a, img {
+        color: map-get($theme-colors, primary);
+        float: right;
+    }
+}
+

@@ -6,90 +6,107 @@
     <link rel="stylesheet" href="./stylesheets/all.css">
     <title>2023_w2</title>
 </head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <ul class="d-flex">
+<body class="body">
+    <header class="header bg-primary">
+        <nav class="nav container pt-10">
+            <ul class="d-flex justify-content-around text-tertiary">
                 <li>WILLIAM LEE</li>
                 <li>BASED IN TAIWAN</li>
-                <li>CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</li>
-                <li><a href="">CONTACT ME</a></li>
+                <li>CURRENTLY FRONT END<br>ENGINEER AT HEXSCHOOL</li>
+                <li><a href="#">CONTACT ME</a></li>
             </ul>
         </nav>
-        <img src="./assets/people.png" alt="WILLIAM LEE">
-        <h2>Hi</h2>
-        <h2>I’m a front-end developer</h2>
-        <h1>William</h1>
-        <button>CONTACT ME<img src="./assets/arrow_outward.svg" alt="CONTACT ME"></button>
+        <div class="banner container py-18">
+            <img src="./assets/people.png" alt="WILLIAM LEE">
+            <div class="title">
+                <h2 class="text-secondary fs-16">
+                    Hi<br>I’m a front-end<br>developer
+                </h2>
+                <h1 class="text-accent fs-32">William</h1>
+                <a class="btn" href="#">
+                    CONTACT ME
+                    <img src="./assets/arrow_outward.svg" alt="arrow">
+                </a>
+            </div>
+        </div>
     </header>
     <main class="main">
-        <article class="intro">
-            <img src="" alt="" class="bg-img">
-                <section>
-                    <h3>Introduction</h3>
-                    <p>Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
-                    <img src="./assets/sparkle-sm.png" alt="sparkle-sm">
-                    <img src="./assets/sparkle-sm.png" alt="sparkle-sm">
-                    <img src="./assets/sparkle-sm.png" alt="sparkle-sm">
+        <div class="bg-img">
+            <article class="container d-flex justify-content-between py-40">
+                <section class="intro-left">
+                    <h3 class="text-secondary fs-16 ">Introduction</h3>
+                    <p class="text-secondary fs-6 ">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
+                    <div class="d-flex mt-8">
+                        <img class="me-4" src="./assets/sparkle-sm.png" alt="sparkle-sm">
+                        <img class="me-4" src="./assets/sparkle-sm.png" alt="sparkle-sm">
+                        <img src="./assets/sparkle-sm.png" alt="sparkle-sm">
+                    </div>
                 </section>
-                <section>
-                    <img src="./assets/sparkle.png" alt="sparkle">
-                    <img src="./assets/photographer.png" alt="photographer">
+                <section class="intro-right d-flex justify-content-between">
+                    <img class="me-6" src="./assets/sparkle.png" alt="sparkle">
+                    <img class="me-6" src="./assets/photographer.png" alt="photographer">
                     <img src="./assets/people-2.png" alt="WILLIAM LEE">
                 </section>
-            </img>
-        </article>
-        <article class="about-me">
+            </article>
+        </div>
+        <article class="container d-flex justify-content-between align-items-center py-40">
             <section>
-                <ul>
-                    <li>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                <ul class="card-group d-flex flex-wrap gap-6">
+                    <li class="card">
+                        <p class="card-num">01</p>
+                        <p class="card-title">Attention to Detail</p>
+                        <p class="card-text">Meticulous code analysis and optimization.</p>
                     </li>
-                    <li>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                    <li class="card">
+                        <p class="card-num">02</p>
+                        <p class="card-title">Adaptability</p>
+                        <p class="card-text">Swift learning of new technologies.</p>
                     </li>
-                    <li>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                    <li class="card">
+                        <p class="card-num">03</p>
+                        <p class="card-title">Problem Solver</p>
+                        <p class="card-text">Identifying and resolving issues.</p>
                     </li>
-                    <li>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                    <li class="card">
+                        <p class="card-num">04</p>
+                        <p class="card-title">Team Player</p>
+                        <p class="card-text">Collaborates and shares ideas.</p>
                     </li>
                 </ul>
             </section>
-            <section>
-                <h3></h3>
-                <p></p>
+            <section class="about-me">
+                <h3 class="fs-16 mb-9">About Me</h3>
+                <p class="fs-6">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
             </section>
-            <artcile class="contact">
-                <section>
-                    <h2></h2>
-                    <img src="" alt="">
-                </section>
-                <section><a href=""><img src="" alt=""></a><a href=""><img src="" alt=""></a><a href=""><img src="" alt=""></a></section>
-            </artcile>
-            <article class="project">
-                <h2></h2>
-                <section class="d-flex">
-                    <div class="d-flex d-warp">
-                        <img src="" alt="">
-                        <div class="d-flex">
-                            <p></p>
-                            <button></button>see more<img src="" alt=""></div>
+        </article>     
+        <artcile class="contact bg-primary d-flex">
+            <section>
+                <h2>CONTACT ME<img src="./assets/trending_flat_black_24dp 1.png" alt="trending_flat"></h2>
+            </section>
+            <section class="d-flex">
+                <a href="#"><img src="./assets/discord.png" alt="discord"></a>
+                <a href="#"><img src="./assets/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="./assets/message.png" alt="message"></a>
+            </section>
+        </artcile>
+        <article class="project">
+            <h2 class="text-primary">My Projects</h2>
+            <section class="d-flex">
+                <img src="./assets/Rectangle 10.png" alt="Rectangle">
+                <div class="d-flex d-warp">
+                    <img src="./assets/Rectangle 15.png" alt="Rectangle">
+                    <div class="d-flex">
+                        <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
+                        <button class="btn">see more<img src="./assets/arrow_outward.svg" alt=""></button>
                     </div>
-                </section>
-            </article>
+                    <img src="./assets/Rectangle 14.png" alt="Rectangle">
+                    <img src="./assets/Rectangle 29.png" alt="Rectangle">
+                </div>
+            </section>
         </article>
     </main>
     <footer class="footer">
-        <p></p>
+        <p>all rights reserved @hexschool2023</p>
     </footer>
 </body>
 </html>

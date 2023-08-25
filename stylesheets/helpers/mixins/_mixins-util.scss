@@ -1,0 +1,13 @@
+@mixin generate-utility($utility){
+    $values: map-get($utility, values);
+    $class: map-get($utility, class);           //找出是m
+    $properties: map-get($utility, property );  //找出是margin
+    
+    @each $key, $value in $values {
+        .#{$class}-#{$key} {
+            @each $property in $properties { 
+                #{$property}: #{$value};
+            }
+        }
+    }
+}
