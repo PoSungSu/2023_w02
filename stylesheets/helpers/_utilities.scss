@@ -2,6 +2,17 @@ $utilities: () !default;
 $utilities: map-merge(
     (
         //flex
+        "flex-direction": (
+            responsive: true,
+            property: flex-direction,
+            class: flex,
+            values: (
+                row: row,
+                column: column,
+                row-reverse: row-reverse,
+                column-reverse: column-reverse,
+            )
+        ),
         "flex-grow": (
             responsive: true,
             property: flex-grow,
@@ -153,6 +164,16 @@ $utilities: map-merge(
               sm: $line-height-sm,      //1.25
               base: $line-height-base,  //1.5
               lg: $line-height-lg,      //2
+            )
+        ),
+        "text-align": (
+            responsive: true,
+            property: text-align,
+            class: text,
+            values: (
+              start: left,
+              end: right,
+              center: center,
             )
         ),
         //text-colors

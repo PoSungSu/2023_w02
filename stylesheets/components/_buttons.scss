@@ -1,5 +1,29 @@
-.btn {
-    background: #FFFFFF;
-    padding: 12px 24px;
+%all-btn {
+    padding: 12px;
     border-radius: 32px;
+    width: 185px;
+    text-align: center;
+    &:hover {
+        background-color: map-get($theme-colors, tertiary );
+        transition: .5s;
+    }
+}
+
+.btn {
+    &-white {
+        background-color: white;
+        color: black;
+        @extend %all-btn;
+    }
+    &-black {
+        background-color: black;
+        color: white;
+        @extend %all-btn;
+    }
+    img {
+        padding-left: 4px;
+    }
+
+
+
 }

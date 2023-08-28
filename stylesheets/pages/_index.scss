@@ -13,3 +13,24 @@
 .about-me {
     max-width: 526px;
 }
+
+.contact {
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+
+.icon:hover img {
+    border-radius: map-get($spacers, 8);
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project h2 {
+    max-width: 746px;
+    // margin-left: auto;
+}
+.project-right {
+    max-width: 856px;
+    p {
+        max-width: 636px;
+    }
+}

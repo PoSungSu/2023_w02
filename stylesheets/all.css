@@ -62,7 +62,7 @@ button {
   cursor: pointer;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -73,18 +73,13 @@ body {
 
 img {
   max-width: 100%;
-  display: block;
+  height: auto;
+  vertical-align: middle;
 }
 
 a {
+  display: block;
   text-decoration: none;
-  position: relative;
-  transition: 0.5s;
-}
-a:before, a:after {
-  content: "";
-  position: absolute;
-  transition: 0.3s;
 }
 
 .text-uppercase {
@@ -122,10 +117,43 @@ a:before, a:after {
   font-size: 1.25rem;
 }
 
-.btn {
-  background: #FFFFFF;
-  padding: 12px 24px;
+.btn-black, .btn-white {
+  padding: 12px;
   border-radius: 32px;
+  width: 185px;
+  text-align: center;
+}
+.btn-black:hover, .btn-white:hover {
+  background-color: #D1D1D1;
+  transition: 0.5s;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+}
+.btn-black {
+  background-color: black;
+  color: white;
+}
+.btn img {
+  padding-left: 4px;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-grow-0 {
@@ -1190,6 +1218,18 @@ a:before, a:after {
   line-height: 2;
 }
 
+.text-start {
+  text-align: left;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-primary {
   color: black;
 }
@@ -1270,6 +1310,10 @@ a:before, a:after {
   background-color: #212529;
 }
 
+.header {
+  background-color: black;
+}
+
 .nav a {
   color: #D1D1D1;
 }
@@ -1288,12 +1332,14 @@ a:before, a:after {
   flex-grow: 1;
   max-width: 636px;
 }
-.title h1 {
-  text-align: right;
+
+.footer {
+  background-color: black;
+  padding: 40px 0;
 }
-.title a, .title img {
-  color: black;
-  float: right;
+.footer p {
+  color: white;
+  text-align: center;
 }
 
 .bg-img {
@@ -1314,4 +1360,24 @@ a:before, a:after {
 
 .about-me {
   max-width: 526px;
+}
+
+.contact {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+.icon:hover img {
+  border-radius: 2rem;
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project h2 {
+  max-width: 746px;
+}
+
+.project-right {
+  max-width: 856px;
+}
+.project-right p {
+  max-width: 636px;
 }/*# sourceMappingURL=all.css.map */

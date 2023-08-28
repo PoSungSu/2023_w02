@@ -1,3 +1,6 @@
+.header {
+    background-color: map-get($theme-colors, primary );
+}
 .nav a {
     color: map-get($theme-colors, tertiary);
     &:hover {
@@ -14,12 +17,5 @@
 .title {
     flex-grow: 1;
     max-width: 636px;
-    h1 {
-        text-align: right;
-    }
-    a, img {
-        color: map-get($theme-colors, primary);
-        float: right;
-    }
 }
 

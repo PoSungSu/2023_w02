@@ -7,7 +7,7 @@
     <title>2023_w2</title>
 </head>
 <body class="body">
-    <header class="header bg-primary">
+    <header class="header">
         <nav class="nav container pt-10">
             <ul class="d-flex justify-content-around text-tertiary">
                 <li>WILLIAM LEE</li>
@@ -22,11 +22,11 @@
                 <h2 class="text-secondary fs-16">
                     Hi<br>I’m a front-end<br>developer
                 </h2>
-                <h1 class="text-accent fs-32">William</h1>
-                <a class="btn" href="#">
-                    CONTACT ME
-                    <img src="./assets/arrow_outward.svg" alt="arrow">
-                </a>
+                <div class="d-flex flex-column align-items-end">
+                    <h1 class="text-accent fs-32">William</h1>
+                    <a class="btn btn-white" href="#">contact me<img src="./assets/arrow_outward.svg" alt="arrow"></a>
+                </div>
+
             </div>
         </div>
     </header>
@@ -79,34 +79,42 @@
                 <p class="fs-6">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
             </section>
         </article>     
-        <artcile class="contact bg-primary d-flex">
-            <section>
-                <h2>CONTACT ME<img src="./assets/trending_flat_black_24dp 1.png" alt="trending_flat"></h2>
-            </section>
-            <section class="d-flex">
-                <a href="#"><img src="./assets/discord.png" alt="discord"></a>
-                <a href="#"><img src="./assets/instagram.png" alt="instagram"></a>
-                <a href="#"><img src="./assets/message.png" alt="message"></a>
-            </section>
-        </artcile>
-        <article class="project">
-            <h2 class="text-primary">My Projects</h2>
-            <section class="d-flex">
+        <article class="contact bg-primary py-24">
+            <div class="container d-flex align-items-center justify-content-between">
+                    <h2 class="text-secondary fs-16">CONTACT ME
+                        <img src="./assets/trending_flat_black_24dp 1.png" alt="trending_flat">
+                    </h2>
+                <section class="social-icon d-flex gap-5">
+                    <a class="icon" href="#"><img src="./assets/discord.png" alt="discord"></a>
+                    <a class="icon" href="#"><img src="./assets/instagram.png" alt="instagram"></a>
+                    <a class="icon" href="#"><img src="./assets/message.png" alt="message"></a>
+                </section>
+            </div>
+        </article>
+        <article class="project container py-40">
+            <h2 class="text-primary fs-16 ms-auto">My Projects</h2>
+            <section class="d-flex justify-content-between">    <!--切出左右-->
                 <img src="./assets/Rectangle 10.png" alt="Rectangle">
-                <div class="d-flex d-warp">
-                    <img src="./assets/Rectangle 15.png" alt="Rectangle">
-                    <div class="d-flex">
-                        <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
-                        <button class="btn">see more<img src="./assets/arrow_outward.svg" alt=""></button>
+                <div class="project-right d-flex flex-wrap gap-6">              <!--右邊 切出上下-->
+                    <div class="d-flex gap-6">
+                        <img src="./assets/Rectangle 15.png" alt="Rectangle">
+                        <div class="d-flex flex-column justify-content-between">
+                            <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
+                                <a href="#" class="btn btn-black">
+                                    see more<img src="./assets/arrow_outward-white.png" alt="arrow_outward">
+                                </a>                     
+                        </div>
                     </div>
-                    <img src="./assets/Rectangle 14.png" alt="Rectangle">
-                    <img src="./assets/Rectangle 29.png" alt="Rectangle">
+                    <div class="d-flex gap-6">
+                        <img src="./assets/Rectangle 14.png" alt="Rectangle">
+                        <img src="./assets/Rectangle 29.png" alt="Rectangle">
+                    </div>
                 </div>
             </section>
         </article>
     </main>
     <footer class="footer">
-        <p>all rights reserved @hexschool2023</p>
+            <p>all rights reserved @hexschool2023</p>
     </footer>
 </body>
 </html>
